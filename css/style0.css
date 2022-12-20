@@ -1,0 +1,159 @@
+*{
+    scroll-behavior: smooth;
+}
+:root{
+    --backgroung-color:#292929;
+    --color:#1fa8d1;
+    --color-window:rgba(31, 168, 209, 0.7);
+
+    --tittle:2rem;
+    --subtittle:1.6rem;
+    --tittle2:1.6rem;
+    --description:1.2rem;
+}
+.main--1{
+    background: linear-gradient(0deg,rgba(12, 12, 12, 0.75),rgb(22, 22, 22)),
+    url("../assets/images/background.jpg") center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 0;
+
+    position: absolute;
+    top: 0;
+}
+.main__contanier{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 14%;
+    border-radius: 100%;
+}
+.tittle{
+    color: rgb(250, 250, 250);
+
+    font-size: var(--tittle);
+}
+.subtittle{
+    color: rgb(250, 250, 250);
+    
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+
+    font-size: var(--tittle2);
+}
+.subtittle--1{
+    border-right: 2px solid #fff;
+
+    font-size:var(--subtittle) ;
+
+    animation-name: animation-indicador-text;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.space{
+    display: inline-block;
+}
+@keyframes animation-indicador-text {
+    0%{border-right: 2px solid rgba(255, 255, 255, 0);}
+    50%{border-right: 2px solid rgb(255, 255, 255);}
+    100%{border-right: 2px solid rgba(255, 255, 255, 0);}
+}
+.box_buttom{
+    box-shadow: 0px 0px 100px 30px var(--color);
+    border-radius: 100%;
+    width: 2%;
+    height: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 10%;
+
+    animation-name: indicator-bottom-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.desplazar__buttom{
+    width: 280%;
+}
+
+@keyframes indicator-bottom-animation {
+    0%{
+        bottom: 13%;
+        box-shadow: 0px 0px 60px 10px var(--color);
+    }
+    50%{
+        bottom: 11%;
+        box-shadow: 0px 0px 75px 15px var(--color);
+    }
+    100%{
+        bottom: 13%;
+        box-shadow: 0px 0px 60px 10px var(--color);
+    }
+}
+.panel--2{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+.color--1{
+    /* background-color: #00000080; */
+    background: 
+        linear-gradient(0deg,rgb(10, 10, 10),rgba(10,10,10, 0.3)),
+        linear-gradient(180deg,rgb(10, 10, 10),rgba(10,10,10, 0.3))
+        ,url("../assets/images/font.jpg") center/cover no-repeat ;
+
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    padding: 16% 9%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    color: #fff;
+    font-size: var(--description);
+}
+.color--2{
+    background-color: var(--color-window);
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+.transparent{
+    outline: 1vw dashed #141414;
+    border: 0.75vw dashed #14141400;
+    border-radius: 1000px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    width: 80%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: relative;
+    right: 25%;
+}
+.img__yo{
+    width: 100%;
+}
