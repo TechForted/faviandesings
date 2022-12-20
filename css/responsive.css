@@ -181,6 +181,7 @@
     }
     .aside__content{
         flex-flow: column;
+        margin: 0;
     }
     .column__window{
         width: 100%;
