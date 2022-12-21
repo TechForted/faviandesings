@@ -36,7 +36,7 @@
     /* style 2 */
     --buttoms__aside:calc(100vw / 64);
 
-    --window-tittle:calc(100vh / 32);
+    --window-tittle:calc(100vh / 40);
     --window-description:calc(100vh / 48);
     
     --description_corriculo:calc(100vh / 48);
