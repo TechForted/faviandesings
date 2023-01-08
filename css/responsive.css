@@ -1,10 +1,15 @@
 @media screen and (max-width: 425px) {
     /* header */
+    .header{
+        min-height: 6vw;
+    }
     .botton_contacts{
         width: 20%;
+        max-width: 20vh;
     }
     .sections_menu{
         width: 70%;
+        max-width: 80vh;
         gap: 0%;
     }
     .section--1{
@@ -15,6 +20,7 @@
     }
     .barra__lateral{
         width: 40vw;
+        max-width: 23vh;
         left: -50vh;
     }
     .bottom-icon{
@@ -86,22 +92,24 @@
     }
     .logo{
         width: 30vw;
+        max-width: 25vh;
         border-radius: 100%;
     }
     .desplazar__buttom{
         width: 700%;
+        max-width: 15vh;
     }
     .panel--2{
         background: 
         linear-gradient(0deg,rgb(10, 10, 10),rgba(10,10,10, 0.3)),
         linear-gradient(180deg,rgb(10, 10, 10),rgba(10,10,10, 0.3))
         ,url("../assets/images/font.jpg") center/cover no-repeat ;
-        /* height: auto; */
+        height: auto;
 
         flex-flow: column-reverse nowrap;
     }
     .color--1{
-        background-color: #1fa8d100;
+        background: none;
         width: 100%;
         height: auto;
 
@@ -119,15 +127,17 @@
         justify-content: center;
 
         position: relative;
-        top: 5%;
+        top: 5vh;
     }
     .transparent{
-        outline: 2vw dashed var(--color);
-        border: 2vw solid rgba(51, 51, 51, 0);
+        outline: 1vh dashed var(--color);
+        border: 2vh solid rgba(51, 51, 51, 0);
 
         width: 20vh;
+        min-width: 20vw;
 
-        top: 20%;
+        /* position: absolute; */
+        top: 5%;
         right: 0;
     }
     /* style 1 */
@@ -363,6 +373,9 @@
 } */
 @media screen and (min-width: 426px) and (max-width:800px) {
     /* header */
+    .header{
+        min-height: 6vw;
+    }
     .botton_contacts{
         width: 20%;
     }
@@ -378,6 +391,7 @@
     }
     .barra__lateral{
         width: 40vw;
+        max-width: 23vh;
         left: -50vh;
     }
     .bottom-icon{
@@ -421,22 +435,24 @@
     }
     .logo{
         width: 30vw;
+        max-width: 25vh;
         border-radius: 100%;
     }
     .desplazar__buttom{
         width: 700%;
+        max-width: 15vh;
     }
     .panel--2{
         background: 
         linear-gradient(0deg,rgb(10, 10, 10),rgba(10,10,10, 0.3)),
         linear-gradient(180deg,rgb(10, 10, 10),rgba(10,10,10, 0.3))
         ,url("../assets/images/font.jpg") center/cover no-repeat ;
-        /* height: auto; */
+        height: auto;
 
         flex-flow: column-reverse nowrap;
     }
     .color--1{
-        background-color: #1fa8d100;
+        background: none;
         width: 100%;
         height: auto;
 
@@ -454,14 +470,16 @@
         justify-content: center;
 
         position: relative;
-        top: 5%;
+        top: 5vh;
     }
     .transparent{
-        outline: 2vw dashed var(--color);
-        border: 2vw solid rgba(51, 51, 51, 0);
+        outline: 1vh dashed var(--color);
+        border: 1vh solid rgba(51, 51, 51, 0);
 
         width: 20vh;
+        min-width: 20vw;
 
+        /* position: absolute; */
         top: 5%;
         right: 0;
     }
@@ -504,6 +522,7 @@
     .aside__bottoms{
         background-color: rgba(31, 168, 209, 0.9);
         width: 50vw;
+        height: 100%;
 
         position: absolute;
         left: -100vw;
@@ -547,5 +566,101 @@
     }
     .icon__star{
         width: 50%;
+    }
+}
+@media screen and (max-width: 425px) and (max-height: 425px) {
+    .section--1{
+        background-size: 55% 75%; 
+    }
+    :root{
+        --backgroung-color:#292929;
+        --color:#1fa8d1;
+        --color-window:rgba(31, 168, 209, 0.7);
+        /* style 0 */
+        /* --tittle:3rem; */
+        --tittle: calc(100vw / 24);
+        --subtittle:calc(100vw / 32);
+        /* --subtittle:1.8rem; */
+        /* --tittle2:1rem; */
+        --tittle2:calc(100vw / 28);
+        /* --description:0.8rem; */
+        --description:calc(100vw / 36);
+        /* style 1 */
+        /* --buttom_text:0.9rem; */
+        --buttom_text:calc(100vw / 36);
+        /* --tittle_view:0.9rem; */
+        --tittle_view:calc(100vw / 48);
+        /* --description_view:0.7rem; */
+        --description_view:calc(100vw / 64);
+        /* style 2 */
+        --buttoms__aside:calc(100vw / 32);
+
+        --window-tittle:calc(100vw / 42);
+        --window-description:calc(100vw / 60);
+        
+        --description_corriculo:calc(100vw / 54);
+        --bottoms_download:calc(100vw / 64);
+        
+        --target-section:calc(100vw / 32);
+        --target-tittle:calc(100vw / 52);
+
+        --buttom_expands:calc(100vw / 32);
+    }
+    .main--1{
+        min-height: 100vw;
+    }
+    .main--2{
+        min-height: 100vw;
+    }
+    .main--3{
+        min-height: 100vw;
+    }
+}
+@media screen and (min-width: 426px) and (max-width:800px)  and (max-height: 768px) {
+    .section--1{
+        background-size: 55% 75%; 
+    }
+    :root{
+        --backgroung-color:#292929;
+        --color:#1fa8d1;
+        --color-window:rgba(31, 168, 209, 0.7);
+        /* style 0 */
+        /* --tittle:3rem; */
+        --tittle: calc(100vw / 24);
+        --subtittle:calc(100vw / 32);
+        /* --subtittle:1.8rem; */
+        /* --tittle2:1rem; */
+        --tittle2:calc(100vw / 28);
+        /* --description:0.8rem; */
+        --description:calc(100vw / 36);
+        /* style 1 */
+        /* --buttom_text:0.9rem; */
+        --buttom_text:calc(100vw / 36);
+        /* --tittle_view:0.9rem; */
+        --tittle_view:calc(100vw / 36);
+        /* --description_view:0.7rem; */
+        --description_view:calc(100vw / 48);
+        /* style 2 */
+        --buttoms__aside:calc(100vw / 32);
+
+        --window-tittle:calc(100vw / 48);
+        --window-description:calc(100vw / 60);
+        
+        --description_corriculo:calc(100vw / 54);
+        --bottoms_download:calc(100vw / 64);
+        
+        --target-section:calc(100vw / 32);
+        --target-tittle:calc(100vw / 52);
+
+        --buttom_expands:calc(100vw / 48);
+    }
+    .main--1{
+        min-height: 100vw;
+    }
+    .main--2{
+        min-height: 100vw;
+    }
+    .main--3{
+        min-height: 100vw;
     }
 }

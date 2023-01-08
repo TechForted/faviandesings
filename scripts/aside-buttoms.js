@@ -410,7 +410,7 @@ pushButtom1 = ()=>{
     buttomPush[1] = false;
     buttomPush[2] = false;
     functionButtom();
-    if(screen.availWidth < 768){
+    if(screen.availWidth < 820){
         console.log(`asdasdas`)
         mainView.innerHTML = services_mobile;
         const buttom__aside = document.querySelector(`.box__expands`);
@@ -431,7 +431,7 @@ pushButtom2 = ()=>{
     buttomPush[1] = true;
     buttomPush[2] = false;
     functionButtom();
-    if(screen.availWidth < 768){
+    if(screen.availWidth < 820){
         mainView.innerHTML = corriculo_mobile;
         const buttom__aside = document.querySelector(`.box__expands`);
         if(move == false){
@@ -451,7 +451,7 @@ pushButtom3 = ()=>{
     buttomPush[1] = false;
     buttomPush[2] = true;
     functionButtom();
-    if(screen.availWidth < 768){
+    if(screen.availWidth < 820){
         mainView.innerHTML = languages_mobile;
         const buttom__aside = document.querySelector(`.box__expands`);
         if(move == false){
